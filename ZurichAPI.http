@@ -1,0 +1,6 @@
+@ZurichAPI_HostAddress = http://localhost:5118
+
+GET {{ZurichAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
