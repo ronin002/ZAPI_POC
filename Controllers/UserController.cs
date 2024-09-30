@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ZurichAPI.Model.Dto;
 using ZurichAPI.Model.Entity;
 using ZurichAPI.Repository;
@@ -19,6 +20,14 @@ namespace ZurichAPI.Controllers
         {
             _logger = logger;
         }
+
+        [AllowAnonymous]
+        [HttpGet("api/v1/user/")]
+        public IActionResult GetTest() 
+        {
+            return Ok("Teste");
+        }
+
         [HttpPost("api/v1/user/")]
         public IActionResult CreateUser([FromBody] CreateUserDto userCreateModel)
         {

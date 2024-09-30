@@ -6,6 +6,11 @@ using System.Reflection.Emit;
 using System.Text.RegularExpressions;
 using ZurichAPI.Model.Entity;
 
+
+using System.Security.Cryptography;
+
+
+
 namespace ZurichAPI.Data
 {
     public class DataContext : DbContext
