@@ -24,37 +24,37 @@ namespace ZurichAPI.Controllers
         [HttpGet("api/v1/proposta/cpf")]
         public Proposta GetPropostaByCPF([FromBody] GetPropostaByCpfDto getPropostaByCpfDto)
         {
-            throw new NotImplementedException();
+            return new Proposta();
         }
 
         [HttpGet("api/v1/proposta/")]
         public Proposta GetPropostaById([FromBody] GetPropostaByIdDto getPropostaByIdDto)
         {
-            throw new NotImplementedException();
+            return new Proposta();
         }
 
         [HttpGet("api/v1/proposta/pendentes")]
         public List<Proposta> GetPropostasPendentes()
         {
-            throw new NotImplementedException();
+            return new List<Proposta>();
         }
 
         [HttpDelete("api/v1/proposta")]
         public bool Remove([FromBody] GetPropostaByIdDto getPropostaByIdDto)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         [HttpPost("api/v1/proposta")]
         public bool Save(Proposta proposta)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         [HttpPut("api/v1/proposta")]
         public Proposta UpdateProposta(Proposta proposta)
         {
-            throw new NotImplementedException();
+            return proposta;
         }
     }
 }
